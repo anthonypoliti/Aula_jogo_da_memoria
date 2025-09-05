@@ -1,5 +1,5 @@
 //classe para gerenciaras cartas e suas função
-class Cardmanager {
+class CardManager {
     //atributos
     flipppedCards = new Set();
     urlFactory;
@@ -16,4 +16,5 @@ class Cardmanager {
         //retomar o clone
         return clone;
     }
+
 }

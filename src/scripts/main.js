@@ -4,6 +4,13 @@ let select = document.getElementById('numCards');
 let button = document.getElementById('start');
 let board = document.getElementById("board")
 
+// Função que cria o caminho para as imagens
+function urlBuilder(number) {}
+
+// Instancias 
+let card = new CardManager(urlBuilder);
+let boardMain = new BoardManager("board", 50, card);                                        
+
 //fazer um loop for--> inicia no numero 4. menor oi igual a 10. incrementa 2 a cada loop
 
 //variavel - condição - ação 
@@ -27,6 +34,6 @@ button.addEventListener("click", () => {
     menu.classList.add("hidden");
     //Fazendo o tabuleiro aparecer
     board.classList.remove("hidden");
+    boardMain.fill(select.value);
 })
 
-botao.click()
